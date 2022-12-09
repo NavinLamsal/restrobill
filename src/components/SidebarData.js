@@ -4,33 +4,28 @@ import '../App.css';
 
 export const SidebarData = [
     {
-        title:"home",
-        icon: <icon/>,
-        link:"/home"
-    },
-    {
-        title:"Dashboard",
-        icon: <icon/>,
+        title:"Home",
+        icon: <i class="fa-regular fa-house"></i>,
         link:"/home"
     },
     {
         title:"Table",
-        icon: <icon/>,
+        icon: <i class="fa-solid fa-person-seat"></i>,
         link:"/Table"
     },
     {
-        title:"Order",
-        icon: <icon/>,
-        link:"/Order"
+        title:"Menu",
+        icon: <i class="fa-regular fa-rectangle-list"></i>,
+        link:"/Menu"
     },
     {
-        title:"Bill",
-        icon: <icon/>,
-        link:"/Bill"
+        title:"Order",
+        icon: <i class="fa-light fa-ballot-check"></i>,
+        link:"/order"
     },
     {
         title:"Payment",
-        icon: <icon/>,
+        icon: <i class="fa-regular fa-credit-card"></i>,
         link:"/Payment"
     }
 ]
