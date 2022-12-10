@@ -1,5 +1,7 @@
 import React from 'react'
 import img1 from './img/Asset1.png'
+import DateTime from './DateTime'
+
 
 export default function Navbar() {
   return (
@@ -13,10 +15,13 @@ export default function Navbar() {
     <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <a className="nav-link active" aria-current="page" href="/Home">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Table</a>
+          <a className="nav-link active" aria-current="page" href="/Table">Table</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="#">Menu</a>
         </li>
         <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="#">Order</a>
@@ -29,7 +34,7 @@ export default function Navbar() {
         </li>
       </ul>
       <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <DateTime/>
         <button className="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
