@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export default function home() {
+export default function HomeComponent() {
   return (
     <div>
       home page

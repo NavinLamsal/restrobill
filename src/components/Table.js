@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Table() {
+export default function TableComponent() {
   return (
     <div>
       table page

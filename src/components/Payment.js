@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function payment() {
+export default function PaymentComponent() {
   return (
     <div>
       payment page
