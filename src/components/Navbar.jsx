@@ -1,7 +1,9 @@
 import React from 'react'
 import img1 from './img/Asset1.png'
-import DateTime from './DateTime'
+
 import { Link } from "react-router-dom";
+import { MdLogout } from "react-icons/md";
+import { BsPersonFill } from "react-icons/bs";
 
 export default function NavbarComponent() {
   return (
@@ -14,35 +16,25 @@ export default function NavbarComponent() {
           <a className="navbar-brand" href="/"><img src={img1} alt="Logo" width="50%" height="40%" /></a>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link to={'/home'} className='nav-link active'>Home</Link>
-                {/* <a className="nav-link active" aria-current="page" href="/Home">Home</a> */}
-              </li>
-              <li className="nav-item">
-                <Link to={'/table'} className='nav-link active'>Table</Link>
-                {/* <a className="nav-link active" aria-current="page" href="/Table">Table</a> */}
-              </li>
-              <li className="nav-item">
-                <Link to={'/menu'} className='nav-link active'>Menu</Link>
-                {/* <a className="nav-link active" aria-current="page" href="#">Menu</a> */}
-              </li>
-              <li className="nav-item">
-                <Link to={'/order'} className='nav-link active'>Order</Link>
-                {/* <a className="nav-link active" aria-current="page" href="#">Order</a> */}
-              </li>
-              <li className="nav-item">
-                <Link to={'/bill'} className='nav-link active'>Bill</Link>
-                {/* <a className="nav-link active" aria-current="page" href="#">Bill</a> */}
-              </li>
-              <li className="nav-item">
+              {/* if anything to add in navbar at left side the add here as below code  */}
+              {/* <li className="nav-item">
                 <Link to={'/payment'} className='nav-link active'>Payment</Link>
-                {/* <a className="nav-link active" aria-current="page" href="#">Payment</a> */}
-              </li>
+              </li> */}
             </ul>
-            <form className="d-flex" role="search">
-              <DateTime />
-              <button className="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <ul className="d-flex" >
+              <li className="nav-item">
+                <div className="icon">{MdLogout}</div>
+              </li>
+              <li className="nav-item">
+                <div className="icon">{BsPersonFill}</div>
+              </li>
+              <li className="nav-item">
+                 <Link to={'/profile'} className='nav-link active'>Username</Link>
+              </li>
+            
+            
+              
+            </ul>
           </div>
         </div>
       </nav>
