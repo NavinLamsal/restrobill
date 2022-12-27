@@ -7,8 +7,8 @@ import { BsPersonFill } from "react-icons/bs";
 
 export default function NavbarComponent() {
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg bg-light shadow p-3 mb-5">
+    <>
+      <nav className="navbar navbar-expand-lg bg-light shadow p-3">
         <div className="container-fluid">
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -38,6 +38,6 @@ export default function NavbarComponent() {
           </div>
         </div>
       </nav>
-    </div>
+    </>
   )
 }
